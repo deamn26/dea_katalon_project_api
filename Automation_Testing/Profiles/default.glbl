@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>81399793937</initValue>
+      <name>no_hp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'deagmaryadi@gmail.com'</initValue>
+      <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Harry'</initValue>
+      <name>nama_depan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Potter'</initValue>
+      <name>nama_belakang</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ACd0c5943fbbbeea7c527bd08f6d8671c0'</initValue>
+      <name>Twilio_AccountSID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'d416d7ce56e0cea567a918ba7937aca9'</initValue>
+      <name>Twilio_AuthToken</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

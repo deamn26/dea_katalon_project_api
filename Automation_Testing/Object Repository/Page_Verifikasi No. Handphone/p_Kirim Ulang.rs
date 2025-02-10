@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Kirim Ulang</name>
+   <tag></tag>
+   <elementGuidId>7d37da09-8ef1-47d7-856f-94e79e0d0f23</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.LinkWithCountdown_resend-link__text__Xm8rW</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__next']/main/div/div/div[2]/div/div[3]/button/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>c96d9bbe-f0a7-4133-b97d-7ce834a93387</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>LinkWithCountdown_resend-link__text__Xm8rW</value>
+      <webElementGuid>fe475c0b-7ad3-450c-a01b-3071d533ac33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kirim Ulang</value>
+      <webElementGuid>a40ac31b-5432-4c1b-bbeb-2d75cde03ec3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/main[1]/div[1]/div[@class=&quot;HeaderFooter_header-gap__uaiur&quot;]/div[@class=&quot;superapp-container content&quot;]/div[@class=&quot;container_Eq-qi&quot;]/div[@class=&quot;text-center m-t-24&quot;]/button[@class=&quot;btn_SGZcZ btn-track btn--link_iMrB4 LinkWithCountdown_resend-link__text__Xm8rW&quot;]/p[@class=&quot;LinkWithCountdown_resend-link__text__Xm8rW&quot;]</value>
+      <webElementGuid>1a00dfd5-042f-447a-a8d0-4a2ddd337624</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/main/div/div/div[2]/div/div[3]/button/p</value>
+      <webElementGuid>896b7750-a361-4369-9aac-fdbc27ddc4c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempel Kode OTP'])[1]/following::p[2]</value>
+      <webElementGuid>746c97c8-4db3-4429-886d-bf0c19a1921f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Coba metode lain'])[1]/preceding::p[1]</value>
+      <webElementGuid>e4a0481b-b6f5-4ac2-865d-55a271ac9a6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Website Cermati.com ingin mengirimkan update dan penawaran menarik!'])[1]/preceding::p[2]</value>
+      <webElementGuid>6666d2e1-840a-4bf6-b56b-b0ff72fcc9e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Kirim Ulang']/parent::*</value>
+      <webElementGuid>c78c46b7-9d8d-433b-9813-f99727f4df7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/p</value>
+      <webElementGuid>c7ea4a7f-094d-4fb8-8ae6-27ccaee7d941</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Kirim Ulang' or . = 'Kirim Ulang')]</value>
+      <webElementGuid>156abd8e-e734-4364-b0e8-85a16258d8fe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
