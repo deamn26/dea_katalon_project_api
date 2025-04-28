@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "coord": {
+                    "$ref": "#/definitions/Coord"
+                },
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/List"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "Coord": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lon": {
+                    "type": "number"
+                },
+                "lat": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Coord"
+        },
+        "List": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "main": {
+                    "$ref": "#/definitions/Main"
+                },
+                "components": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "number"
+                    }
+                },
+                "dt": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "List"
+        },
+        "Main": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "aqi": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Main"
+        }
+    }
+}

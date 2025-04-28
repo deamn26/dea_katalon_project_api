@@ -1,0 +1,227 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cod": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "message": {
+                    "type": "integer"
+                },
+                "cnt": {
+                    "type": "integer"
+                },
+                "list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/List"
+                    }
+                },
+                "city": {
+                    "$ref": "#/definitions/City"
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "City": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "coord": {
+                    "$ref": "#/definitions/Coord"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "population": {
+                    "type": "integer"
+                },
+                "timezone": {
+                    "type": "integer"
+                },
+                "sunrise": {
+                    "type": "integer"
+                },
+                "sunset": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "City"
+        },
+        "Coord": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lon": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Coord"
+        },
+        "List": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dt": {
+                    "type": "integer"
+                },
+                "main": {
+                    "$ref": "#/definitions/Main"
+                },
+                "weather": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Weather"
+                    }
+                },
+                "clouds": {
+                    "$ref": "#/definitions/Clouds"
+                },
+                "wind": {
+                    "$ref": "#/definitions/Wind"
+                },
+                "visibility": {
+                    "type": "integer"
+                },
+                "pop": {
+                    "type": "number"
+                },
+                "rain": {
+                    "$ref": "#/definitions/Rain"
+                },
+                "sys": {
+                    "$ref": "#/definitions/Sys"
+                },
+                "dt_txt": {
+		    "type": "string",
+		    "pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}$"
+		}
+
+            },
+            "required": [],
+            "title": "List"
+        },
+        "Clouds": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "all": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Clouds"
+        },
+        "Main": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "temp": {
+                    "type": "number"
+                },
+                "feels_like": {
+                    "type": "number"
+                },
+                "temp_min": {
+                    "type": "number"
+                },
+                "temp_max": {
+                    "type": "number"
+                },
+                "pressure": {
+                    "type": "integer"
+                },
+                "sea_level": {
+                    "type": "integer"
+                },
+                "grnd_level": {
+                    "type": "integer"
+                },
+                "humidity": {
+                    "type": "integer"
+                },
+                "temp_kf": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Main"
+        },
+        "Rain": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "3h": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Rain"
+        },
+        "Sys": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pod": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Sys"
+        },
+        "Weather": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "main": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "icon": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Weather"
+        },
+        "Wind": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "speed": {
+                    "type": "number"
+                },
+                "deg": {
+                    "type": "integer"
+                },
+                "gust": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Wind"
+        }
+    }
+}
