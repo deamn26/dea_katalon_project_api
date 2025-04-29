@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Testing_API,,,,29-04-2025 06:12:06,29-04-2025 06:12:07,1.645s,PASSED
+,,,,,,,
+Test Cases/Forecast_Weather,,,,29-04-2025 06:12:06,29-04-2025 06:12:07,1.096s,PASSED
+"requestForecast = findTestObject(""Object Repository/weather_api"")",,,,29-04-2025 06:12:06,29-04-2025 06:12:06,0.025s,PASSED
+"responseForecast = sendRequest(findTestObject(""Object Repository/weather_api""))",,,,29-04-2025 06:12:06,29-04-2025 06:12:07,0.822s,PASSED
+"verifyResponseStatusCode(responseForecast, 200)",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.007s,PASSED
+responseBody = responseForecast.getResponseBodyContent(),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.006s,PASSED
+responseDate = dt_txt,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.004s,PASSED
+assert responseDate.size() == 5,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schemaFile = new java.io.File(/Users/deagm/Katalon Studio/Testing_API/Include/scripts/groovy/schemas/weather.schema.json ),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schemaContent = JsonSlurper().parseText(text),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.003s,PASSED
+schemaObject = new org.json.JSONObject(schemaContent),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.006s,PASSED
+responseObject = new org.json.JSONObject(new groovy.json.JsonSlurper().parseText(responseBody)),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schema = SchemaLoader.load(schemaObject),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.036s,PASSED
+try,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.012s,PASSED
+"println(""JSON Schema Validation: SUCCESS"")",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+,,,,,,,
+Test Cases/Air_Pollution,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.487s,PASSED
+"requestForecast = findTestObject(""Object Repository/pollution_api"")",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.002s,PASSED
+"responseForecast = sendRequest(findTestObject(""Object Repository/pollution_api""))",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.367s,PASSED
+"verifyResponseStatusCode(responseForecast, 200)",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.002s,PASSED
+responseBody = responseForecast.getResponseBodyContent(),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.000s,PASSED
+jsonResponse = JsonSlurper().parseText(responseBody),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+unixTime = dt,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.003s,PASSED
+date = new java.util.Date((unixTime * 1000)),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.011s,PASSED
+sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.005s,PASSED
+"sdf.setTimeZone(TimeZone.getTimeZone(""UTC""))",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.002s,PASSED
+formattedDate = sdf.format(date),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.000s,PASSED
+"println(""Formatted Date in UTC: "" + formattedDate)",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+dateMillis = date.getTime(),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+"println(""Date.getTime() value: "" + dateMillis)",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.002s,PASSED
+"println(""Expected millis (unixTime * 1000): "" + unixTime * 1000)",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+if (dateMillis == unixTime * 1000),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schemaFile = new java.io.File(/Users/deagm/Katalon Studio/Testing_API/Include/scripts/groovy/schemas/pollution.schema.json  ),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.000s,PASSED
+schemaContent = JsonSlurper().parseText(text),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schemaObject = new org.json.JSONObject(schemaContent),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.000s,PASSED
+responseObject = new org.json.JSONObject(new groovy.json.JsonSlurper().parseText(responseBody)),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.001s,PASSED
+schema = SchemaLoader.load(schemaObject),,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.002s,PASSED
+try,,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.003s,PASSED
+"println(""JSON Schema Validation: SUCCESS"")",,,,29-04-2025 06:12:07,29-04-2025 06:12:07,0.000s,PASSED
