@@ -1,0 +1,9 @@
+How to get a report
+1. Create new test suites
+2. Include test cases that will be bundle on the test suites
+3. Running test suites
+4. Check on Katalon Studio/Reports
+5. Folder will be named with date timestamp with the exact running time
+6. There are 3 format, csv, html, and pdf to get the report, and it's on the setting
+7. Possible to include screenshot, with added script WebUI.takeScreenshot() on every step
+8. And the screenshot will be added on the reports
