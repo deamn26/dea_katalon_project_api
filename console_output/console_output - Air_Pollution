@@ -1,0 +1,35 @@
+2025-04-29 00:32:14.327 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-04-29 00:32:14.328 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Air_Pollution
+2025-04-29 00:32:14.545 DEBUG testcase.Air_Pollution                   - 1: requestForecast = findTestObject("Object Repository/pollution_api")
+2025-04-29 00:32:14.570 DEBUG testcase.Air_Pollution                   - 2: responseForecast = sendRequest(findTestObject("Object Repository/pollution_api"))
+2025-04-29 00:32:15.554 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: /var/folders/65/qkqv9qyx3td2_qdbmz3y3mcr0000gn/T/Katalon/Test Cases/Air_Pollution/20250429_003212/requests/main/0.har
+2025-04-29 00:32:15.581 DEBUG testcase.Air_Pollution                   - 3: verifyResponseStatusCode(responseForecast, 200)
+2025-04-29 00:32:15.588 DEBUG testcase.Air_Pollution                   - 4: responseBody = responseForecast.getResponseBodyContent()
+2025-04-29 00:32:15.591 DEBUG testcase.Air_Pollution                   - 5: jsonResponse = JsonSlurper().parseText(responseBody)
+2025-04-29 00:32:15.597 DEBUG testcase.Air_Pollution                   - 6: unixTime = dt
+2025-04-29 00:32:15.602 DEBUG testcase.Air_Pollution                   - 7: date = new java.util.Date((unixTime * 1000))
+2025-04-29 00:32:15.611 DEBUG testcase.Air_Pollution                   - 8: sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss)
+2025-04-29 00:32:15.616 DEBUG testcase.Air_Pollution                   - 9: sdf.setTimeZone(TimeZone.getTimeZone("UTC"))
+2025-04-29 00:32:15.618 DEBUG testcase.Air_Pollution                   - 10: formattedDate = sdf.format(date)
+2025-04-29 00:32:15.619 DEBUG testcase.Air_Pollution                   - 11: println("Formatted Date in UTC: " + formattedDate)
+Formatted Date in UTC: 2025-04-28 17:32:15
+2025-04-29 00:32:15.621 DEBUG testcase.Air_Pollution                   - 12: dateMillis = date.getTime()
+2025-04-29 00:32:15.622 DEBUG testcase.Air_Pollution                   - 13: println("Date.getTime() value: " + dateMillis)
+Date.getTime() value: 1745861535000
+2025-04-29 00:32:15.624 DEBUG testcase.Air_Pollution                   - 14: println("Expected millis (unixTime * 1000): " + unixTime * 1000)
+Expected millis (unixTime * 1000): 1745861535000
+2025-04-29 00:32:15.625 DEBUG testcase.Air_Pollution                   - 15: if (dateMillis == unixTime * 1000)
+2025-04-29 00:32:15.626 DEBUG testcase.Air_Pollution                   - 1: println("Check PASSED: date.getTime() matches unixTime * 1000")
+Check PASSED: date.getTime() matches unixTime * 1000
+2025-04-29 00:32:15.626 DEBUG testcase.Air_Pollution                   - 17: schemaFile = new java.io.File(/Users/deagm/Katalon Studio/Testing_API/Include/scripts/groovy/schemas/pollution.schema.json  )
+2025-04-29 00:32:15.629 DEBUG testcase.Air_Pollution                   - 18: schemaContent = JsonSlurper().parseText(text)
+2025-04-29 00:32:15.631 DEBUG testcase.Air_Pollution                   - 19: schemaObject = new org.json.JSONObject(schemaContent)
+2025-04-29 00:32:15.637 DEBUG testcase.Air_Pollution                   - 20: responseObject = new org.json.JSONObject(new groovy.json.JsonSlurper().parseText(responseBody))
+2025-04-29 00:32:15.638 DEBUG testcase.Air_Pollution                   - 21: schema = SchemaLoader.load(schemaObject)
+2025-04-29 00:32:15.662 DEBUG testcase.Air_Pollution                   - 22: try
+2025-04-29 00:32:15.663 DEBUG testcase.Air_Pollution                   - 1: schema.validate(responseObject)
+2025-04-29 00:32:15.671 DEBUG testcase.Air_Pollution                   - 2: println("JSON Schema Validation: SUCCESS")
+JSON Schema Validation: SUCCESS
+2025-04-29 00:32:15.672 DEBUG testcase.Air_Pollution                   - 25: println("JSON Schema Validation: SUCCESS")
+JSON Schema Validation: SUCCESS
+2025-04-29 00:32:15.675 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Air_Pollution

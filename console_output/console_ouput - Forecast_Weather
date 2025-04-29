@@ -1,0 +1,22 @@
+2025-04-29 06:08:29.442 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-04-29 06:08:29.443 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Forecast_Weather
+2025-04-29 06:08:29.638 DEBUG testcase.Forecast_Weather                - 1: requestForecast = findTestObject("Object Repository/weather_api")
+2025-04-29 06:08:29.666 DEBUG testcase.Forecast_Weather                - 2: responseForecast = sendRequest(findTestObject("Object Repository/weather_api"))
+2025-04-29 06:08:30.557 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: /var/folders/65/qkqv9qyx3td2_qdbmz3y3mcr0000gn/T/Katalon/Test Cases/Forecast_Weather/20250429_060827/requests/main/0.har
+2025-04-29 06:08:30.584 DEBUG testcase.Forecast_Weather                - 3: verifyResponseStatusCode(responseForecast, 200)
+2025-04-29 06:08:30.591 DEBUG testcase.Forecast_Weather                - 4: responseBody = responseForecast.getResponseBodyContent()
+2025-04-29 06:08:30.594 DEBUG testcase.Forecast_Weather                - 5: jsonResponse = JsonSlurper().parseText(responseBody)
+2025-04-29 06:08:30.600 DEBUG testcase.Forecast_Weather                - 6: responseDate = dt_txt
+2025-04-29 06:08:30.603 DEBUG testcase.Forecast_Weather                - 7: assert responseDate.size() == 5
+2025-04-29 06:08:30.604 DEBUG testcase.Forecast_Weather                - 8: schemaFile = new java.io.File(/Users/deagm/Katalon Studio/Testing_API/Include/scripts/groovy/schemas/weather.schema.json )
+2025-04-29 06:08:30.607 DEBUG testcase.Forecast_Weather                - 9: schemaContent = JsonSlurper().parseText(text)
+2025-04-29 06:08:30.610 DEBUG testcase.Forecast_Weather                - 10: schemaObject = new org.json.JSONObject(schemaContent)
+2025-04-29 06:08:30.615 DEBUG testcase.Forecast_Weather                - 11: responseObject = new org.json.JSONObject(new groovy.json.JsonSlurper().parseText(responseBody))
+2025-04-29 06:08:30.617 DEBUG testcase.Forecast_Weather                - 12: schema = SchemaLoader.load(schemaObject)
+2025-04-29 06:08:30.647 DEBUG testcase.Forecast_Weather                - 13: try
+2025-04-29 06:08:30.648 DEBUG testcase.Forecast_Weather                - 1: schema.validate(responseObject)
+2025-04-29 06:08:30.657 DEBUG testcase.Forecast_Weather                - 2: println("JSON Schema Validation: SUCCESS")
+JSON Schema Validation: SUCCESS
+2025-04-29 06:08:30.659 DEBUG testcase.Forecast_Weather                - 16: println("JSON Schema Validation: SUCCESS")
+JSON Schema Validation: SUCCESS
+2025-04-29 06:08:30.662 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Forecast_Weather
